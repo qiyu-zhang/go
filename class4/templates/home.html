@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+
+<div>
+    页面{{.title}}
+</div>
+
+    {{if .IsLogin}}
+    <li>
+        <a href="/login?exit=true" >
+            <button type="submit" >退出登录</button>
+        </a>
+    </li>
+    {{else}}
+    <li>
+        <a href="/login" >
+            <button type="submit" >登录</button>
+        </a>
+        <a href="/register">
+            <button type="submit" >注册</button>
+        </a>
+    </li>
+    {{end}}
+
+</body>
+</html>

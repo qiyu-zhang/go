@@ -1,0 +1,7 @@
+使用前，先建数据库与表，表名为users,并修改models里models.go文件连接数据库中的相关字符串
+
+本代码为简单的登录，注册代码
+main.go为主函数文件，用于加载html文件及绑定相关执行函数
+templates用于存储相关html文件
+controllers用于存储与登录，注册相关的函数文件
+models用于存储与操作数据库相关的函数文件
